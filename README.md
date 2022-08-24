@@ -8,4 +8,14 @@
 ## Це мій скрін
 ![any text](https://github.com/BobasB/2022-tk330-oop/raw/main/images/scr_1.png)
 
+
+
+```python
+print("Вивожу текст")
+if a>1: 
+    a=2
+```
+
+
+
 ---

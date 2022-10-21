@@ -24,11 +24,14 @@ class Rocket():
     def info_in_en(self):
         return f"Ракета {self.name} має масу {self.convert_to_pounds()} фунтів та розмір {self.convert_to_feet()} футів."
 
-def test_obj_falcon():
-    r = Rocket("Falcon 9", 549054, 70)
-    print(r.info)
-    print(r.info_in_en)
-    r2 = Rocket("Atlas V", 546700, 58.3)
-    print(r2.info)
-    assert r.name in r.info, "інфо про ракету не містить її назви"
-
+#def test_obj_falcon():
+#    r = Rocket("Falcon 9", 549054, 70)
+#    print(r.info)
+#    print(r.info_in_en)
+#    r2 = Rocket("Atlas V", 546700, 58.3)
+#    print(r2.info)
+#    assert r.name in r.info, "інфо про ракету не містить її назви"
+#    return True
+#
+#if test_obj_falcon():
+#    print("Перевірки виконано")

@@ -34,11 +34,9 @@ class TestMyLab(unittest.TestCase):
         self.assertAlmostEqual(result, self.obj.mass * 2.20462262, 2)
         self.assertIsInstance(result, float)
     
-    def testConvertPounds(self):
-        r2 = Rocket("Atlas V", 546700, 58.3)
-        print(f"Тестуємо -> {r2.name}")
-        result = r2.convert_to_pounds()
-        self.assertAlmostEqual(result, 546700 * 2.20462262)
+    def testConvertFeet(self):
+        result = self.obj.convert_to_feet()
+        self.assertAlmostEqual(result, self.size * 3.2808399)
         self.assertIsInstance(result, float)
     
     def test_mass_less_zero(self):

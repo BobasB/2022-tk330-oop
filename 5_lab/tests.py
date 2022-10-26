@@ -49,7 +49,7 @@ class TestMyLab(unittest.TestCase):
             self.assertIsInstance(Rocket(name, mass, size), Rocket)
 
     def test_method_crash_on_start(self):
-        self.assertIn(self.obj.crash_on_start(), [False, True])
+        self.assertIn(self.obj.crash_on_start(), ["False", "True"])
 
 
 if __name__ == '__main__':

@@ -7,6 +7,10 @@ import os
 #print(df)
 #
 #print(datetime.datetime.now())
+try:
+    print(os.environ["VAR_1"], "ми прочитали змінну")
+except KeyError as e:
+    print("Сталась помилка")
+    print(e)
 
-print(os.environ["VAR_1"], "ми прочитали змінну")
 print("Програма виконалась")

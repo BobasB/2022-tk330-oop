@@ -14,6 +14,18 @@ permissions:
   contents: read
 
 jobs:
+  lab_1:
+      name: Run first Lab
+      steps:
+        - name: First
+          run: echo "First"
+  
+  lab_2:
+      name: Run Second Lab
+      steps:
+        - name: Second
+          run: echo "Second"
+  
   lab_5:
     name: Apply test to Lab 5
 

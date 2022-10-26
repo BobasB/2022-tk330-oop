@@ -43,3 +43,9 @@ jobs:
       run: |
         cd 5_lab/
         pytest tests.py -v
+    - name: Finish
+      run: |
+        cd 5_lab/
+        python ./lab.py
+        echo "Ми завершили тестування. Лабораторна 5 працює!"
+

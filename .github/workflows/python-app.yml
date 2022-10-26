@@ -15,16 +15,26 @@ permissions:
 
 jobs:
   lab_1:
-      name: Run first Lab
-      steps:
-        - name: First
-          run: echo "First"
+    name: Run first Lab
+    runs-on: ubuntu-latest
+    steps:
+      - name: First
+        run: echo "First"
   
-  lab_2:
-      name: Run Second Lab
-      steps:
-        - name: Second
-          run: echo "Second"
+  lab_4:
+    name: Run Second Lab
+    runs-on: ubuntu-latest
+    steps:
+    - name: Git Sync
+      uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name:
+      run: |
+        cd 4_lab/
+        python lab.py
   
   lab_5:
     name: Apply test to Lab 5

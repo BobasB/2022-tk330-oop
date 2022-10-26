@@ -8,4 +8,5 @@ import os
 #
 #print(datetime.datetime.now())
 
-print(os.environ["VAR_1"], "ми проситали змінну")
+print(os.environ["VAR_1"], "ми прочитали змінну")
+print("Програма виконалась")

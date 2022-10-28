@@ -22,7 +22,7 @@ jobs:
         run: echo "First"
       - name: Failing step
         id: demo
-        run: exit 1
+        run: exit 0
       - name: The demo step has failed
         if: ${{ failure() && steps.demo.conclusion == 'failure' }}
         run: |
